@@ -21,6 +21,9 @@ app.get('/', function (req, res) {
 var routes = require('../PersonalAPI/api/routes/personalRoutes'); //importing route
 routes(app); //register the route
 
+var routes2 = require('../PersonalAPI/api/routes/httpErrorRoutes'); //importing route
+routes2(app); //register the route
+
 
 app.listen(port);
 console.log('RESTful API server started on: ' + port);
